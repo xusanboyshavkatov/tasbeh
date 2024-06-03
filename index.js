@@ -7,6 +7,7 @@ let musiqafile = document.querySelector(".musiqafile")
 let musiqaicon = document.querySelector(".musiqaicon")
 function clickbtn() {
     count++
+    window.navigator.vibrate([100])
     counth1.innerHTML = count
     clickbtntext.innerHTML = count
 }
