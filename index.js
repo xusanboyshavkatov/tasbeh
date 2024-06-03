@@ -1,36 +1,41 @@
-let count = document.querySelector(".count")
-let count2 = document.querySelector(".count2")
-let res = document.querySelector(".res")
+let count = 0
+let counth1 = document.querySelector(".counth1")
+let clickbtntext = document.querySelector(".countbtn")
 
-let musiqa = document.querySelector('.musiqa')
-let musiqa3 = document.querySelector(".audio")
 
-let countdata = 0
-
-function show() {
-    countdata++
-    count.innerHTML = countdata
-    count2.innerHTML = countdata
+let musiqafile = document.querySelector(".musiqafile")
+let musiqaicon = document.querySelector(".musiqaicon")
+function clickbtn() {
+    count++
+    counth1.innerHTML = count
+    clickbtntext.innerHTML = count
+}
+function tasbeh_minus() {
+    count--
+    counth1.innerHTML = count
+    clickbtntext.innerHTML = count
 }
 
-function restart() {
-    countdata = 0
-    count.innerHTML = "0"
-    count2.innerHTML = "0"
+function tasbeh_restart() {
+    count = 0
+    counth1.innerHTML = count
+    clickbtntext.innerHTML = count
 }
+
 
 isOpen = true
 
-function musiqa1() {
+function musiqa() {
     if (isOpen) {
-        musiqa.play()
-        musiqa3.src = "img/icons8-no-audio-50.png"
+        musiqafile.play()
+        musiqaicon.src = "img/tasbeh_audio_icon.png"
         isOpen = false
     }
     else {
-        musiqa.pause()
+        musiqafile.pause()
         isOpen = true
-        musiqa3.src = "img/icons8-audio-50.png"
+        musiqaicon.src = "img/tasbeh_noaudio_icon.png"
+        musiqafile.currentTime = 0;
     }
 
 }

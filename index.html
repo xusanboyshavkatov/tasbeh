@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="rosaryappwrap">
-        <div class="topnavbar">
-            <i class="fa-solid fa-arrow-rotate-left" onclick="restart()"></i>
-            <img src="img/icons8-audio-50.png" class="audio" onclick="musiqa1()">
-            <h1 class="count">0</h1>
+    <div class="wrap">
+        <div class="content">
+            <img src="img/islamic_patern2.png" class="islamic_patern">
+            <h1 class="counth1">0</h1>
         </div>
-        <div class="content"  onclick="show()">
-            <img src="img/islamic_patern.png" class="islamic_patern">
-            <h2 class="count2">0</h2>
-            <h1>Tasbeh.uz</h1>
+
+        <div class="bottom__content">
+            <button class="countbtn" onclick="clickbtn()">0</button>
+            <div class="bottom__content_navbar">
+                <img src="img/tasbeh_minus.png" onclick="tasbeh_minus()">
+                <img src="img/tasbeh_restart.png" onclick="tasbeh_restart()">
+                <img src="img/tasbeh_noaudio_icon.png" onclick="musiqa()" class="musiqaicon">
+            </div>
         </div>
-        <audio src="audio/islamicmusic.m4a" class="musiqa"></audio>
     </div>
+    <audio src="audio/audioislamic.m4a" class="musiqafile"></audio>
     <script src="index.js"></script>
 </body>
 </html>
