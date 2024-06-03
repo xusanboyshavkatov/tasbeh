@@ -179,3 +179,62 @@
         margin-top: 20px;
     }
 }
+
+
+@media screen and (max-width: 375px) {
+    .wrap{
+        max-width: 375px;
+        width: 100%;
+    }
+    .islamic_patern{
+        width: 90%;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 0;
+    }
+    .counth1{
+        font-size:70px;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        text-align: center;
+        margin-top: 175px;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .countbtn{
+        width: 120px;
+        height: 120px;
+        background-color: #00584d;
+        margin: auto;
+        border-radius: 50%;
+        border: none;
+        border-top:solid 2px white;
+        border-bottom:solid 2px #024840;
+        margin-bottom: 200px;
+        position: absolute;
+        z-index: 11;
+        font-size: 60px;
+        font-weight: bold;
+        color: white;
+    }
+    .bottom__content_navbar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    .bottom__content_navbar img{
+        width: 30px;
+        margin-top: 20px;
+    }
+}
