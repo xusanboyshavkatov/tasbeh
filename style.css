@@ -2,89 +2,166 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-.wrap{
-    max-width: 425px;
-    width: 100%;
-    height: 100vh;
-    background: url(img/tasbeh_bg.jpg) no-repeat center center / cover;
-    margin: auto;
-    /* padding: 15px 20px; */
     box-sizing: border-box;
-    overflow: hidden;
-}
-.content{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.islamic_patern{
-    width: 95%;
-    margin-top: 70px;
-    position: relative;
-    z-index: 0;
-}
-.counth1{
-    font-size:80px;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    text-align: center;
-    margin-top: 220px;
-    z-index: 10;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    user-select: none;
 }
 
-.bottom__content{
+.tasbeh__wrap{
+    max-width: 425px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+.tasbeh__navbar{
     width: 100%;
-    transform: scale(120%);
+    height: auto;
+}
+.tasbeh__navbar_tiitle{
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #109484;
+}
+.tasbeh__navbar_tiitle h1{
+    text-align: center;
+    font-weight: 400px;
+    font-size: 24px;
+    color: white;
+}
+.tasbeh__navbar_funksiya{
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tasbeh__navbar_funksiya img{
+    width: 30px;
+}
+.count_input_btn{
+    width: 40%;
+    padding: 10px 15px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid #1094855f;
+    margin-left: 60px;
+}
+.tasbeh_content{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.tasbeh_count{
+    width: 200px;
     height: 200px;
-    background-color: #de9016;
-    margin-top: 80px;
-    border-top-left-radius: 190px;
-    border-top-right-radius: 190px;
+    border: 10px solid #1094855f;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tasbeh_count_h1{
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    /* font-size: 54px; */
+    color: #109484;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* footer qismi */
+.tasbeh_footer{
+    width: 100%;
+    height: auto;
+    padding: 15px 15px;
+    background-color: rgb(246, 246, 246);
+    border: 4px solid rgb(238, 238, 238);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right:0px ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 0;
+}
+.tasbeh_footer_h1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* popup modal */
+
+.tasbeh_popup_input{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: fixed;
+    overflow: hidden;
+    z-index: 11;
+    background-color: #1094854a;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tasbeh_popup_form{
+    width: 60%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    gap: 10px;
 }
-.countbtn{
-    width: 140px;
-    height: 140px;
-    background-color: #00584d;
-    margin: auto;
-    border-radius: 50%;
-    border: none;
-    border-top:solid 2px white;
-    border-bottom:solid 2px #024840;
-    margin-bottom: 150px;
-    position: absolute;
-    z-index: 11;
-    font-size: 60px;
-    font-weight: bold;
-    color: white;
+.tasbeh_popup_form h2{
+    font-size: 18px;
+    color: #109484;
+    text-align: center;
 }
-.bottom__content_navbar{
+.tasbeh_popup_form .count_input{
     width: 100%;
-    height: auto;
+    padding: 10px 5px;
+    border: 2px solid #109484;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.tasbeh_popup_btns{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    justify-content: space-between;
 }
-.bottom__content_navbar img{
-    width: 30px;
-    margin-top: 60px;
+.btn{
+    width: 45%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #109484;
+    color: white;
 }
+
+.display_none{
+    display: none;
+}
+

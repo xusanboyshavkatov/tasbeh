@@ -3,28 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elektron tasbex - by: xusanboy-dev.uz</title>
+    <title>Tasbeh.uz</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <div class="wrap">
-        <div class="content">
-            <img src="img/islamic_patern2.png" class="islamic_patern">
-            <h1 class="counth1">0</h1>
-        </div>
-
-        <div class="bottom__content">
-            <button class="countbtn" onclick="clickbtn()">0</button>
-            <div class="bottom__content_navbar">
-                <img src="img/tasbeh_minus.png" onclick="tasbeh_minus()">
-                <img src="img/tasbeh_restart.png" onclick="tasbeh_restart()">
-                <img src="img/tasbeh_noaudio_icon.png" onclick="musiqa()" class="musiqaicon">
+    <div class="tasbeh__wrap">
+        <div class="tasbeh__navbar">
+            <div class="tasbeh__navbar_tiitle">
+                <h1>Tasbeh.uz</h1>
+            </div>
+            <div class="tasbeh__navbar_funksiya">
+                <img src="img/icons8-info-50.png">
+                <button class="count_input_btn" onclick="count_input_btn()">Maqsadli miqdor!</button>
+                <img src="img/icons8-restart-50 (1).png" onclick="res()">
+                <img src="img/icons8-audio-50 (1).png" class="musiqaicon" onclick="musiqa()">
             </div>
         </div>
+        <div class="tasbeh_content">
+            <div class="tasbeh_count" onclick="tasbeh_count()">
+                <h1 class="tasbeh_count_h1">Boshlash</h1>
+            </div>
+        </div>
+        <div class="tasbeh_footer">
+            <h1 class="tasbeh_footer_h1">Hammasni ko'rish</h1>
+        </div>
+
     </div>
-    <audio src="audio/audioislamic.m4a" class="musiqafile"></audio>
+
+    <div class="tasbeh_popup_input display_none">
+        <form class="tasbeh_popup_form">
+            <h2>Kerakli Miqdorni kiriting</h2>
+            <input type="text" placeholder="Kerakli miqdorni kiriting" class="count_input">
+            <div class="tasbeh_popup_btns">
+                <button class="cancel_btn btn" onclick="cancel_btn()">Bekor qilsh</button>
+                <button class="save_btn btn" onclick="save_btn()">Saqlash</button>
+            </div>
+        </form>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
