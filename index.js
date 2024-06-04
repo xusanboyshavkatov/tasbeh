@@ -12,6 +12,7 @@ function clickbtn() {
     clickbtntext.innerHTML = count
 }
 function tasbeh_minus() {
+    if(count === 0) return;
     count--
     counth1.innerHTML = count
     clickbtntext.innerHTML = count
