@@ -60,10 +60,6 @@ function tasbeh_count() {
             audio.play();
         }
         else if (audio2 == 2){
-            // Ovoz faylini yuklash
-            let audio = ""
-            // Ovozni ijro etish
-            audio.pause();
             window.navigator.vibrate([50]);
         }
     }
