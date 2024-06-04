@@ -18,7 +18,7 @@ function musiqa() {
     }
     else if (audioopen === 2) {
         musiqaicon.src = "img/icons8-no-audio-50 (2).png"
-        audio2++
+        audio2 = 2
         audioopen ++
     }
     else if (audioopen === 3) {
