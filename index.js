@@ -6,24 +6,24 @@ let tasbeh_count_h1 = document.querySelector(".tasbeh_count_h1")
 let musiqaicon = document.querySelector(".musiqaicon")
 
 let count = 0
+let audio2 = 1
 
-let audio = "";
 let audioopen = 1
-audio = new Audio("audio/click.m4a")
+// audio = new Audio("audio/click.m4a")
 function musiqa() {
     if (audioopen === 1) {
         musiqaicon.src = "img/icons8-vibration-64.png"
-        audio = window.navigator.vibrate([50])
+        audio2++
         audioopen++
     }
     else if (audioopen === 2) {
         musiqaicon.src = "img/icons8-no-audio-50 (2).png"
-        audio = ""
+        audio2++
         audioopen ++
     }
     else if (audioopen === 3) {
         musiqaicon.src = "img/icons8-audio-50 (1).png"
-        audio = new Audio("audio/click.m4a")
+        audio2 = 1
         audioopen = 1
     }
 }
@@ -53,12 +53,19 @@ function tasbeh_count() {
         count++
         tasbeh_count_h1.innerHTML = count
         tasbeh_count_h1.style.fontSize = "54px";
-
-        // Ovoz faylini yuklash
-        // let audio = new Audio("audio/click.m4a");
-        // Ovozni ijro etish
-        audio
-        audio.play();
+        if (audio2 == 1) {
+            // Ovoz faylini yuklash
+            let audio = new Audio("audio/click.m4a");
+            // Ovozni ijro etish
+            audio.play();
+        }
+        else if (audio2 == 2){
+            // Ovoz faylini yuklash
+            let audio = ""
+            // Ovozni ijro etish
+            audio.pause();
+            window.navigator.vibrate([50]);
+        }
     }
     else if (count < parseInt(count_input_btninnerhtml.innerHTML)) {
         count++
