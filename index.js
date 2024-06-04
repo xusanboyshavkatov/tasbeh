@@ -7,9 +7,8 @@ let musiqaicon = document.querySelector(".musiqaicon")
 
 let count = 0
 let audio2 = 1
-
 let audioopen = 1
-// audio = new Audio("audio/click.m4a")
+
 function musiqa() {
     if (audioopen === 1) {
         musiqaicon.src = "img/icons8-vibration-64.png"
@@ -18,7 +17,7 @@ function musiqa() {
     }
     else if (audioopen === 2) {
         musiqaicon.src = "img/icons8-no-audio-50 (2).png"
-        audio2 = 2
+        audio2++
         audioopen ++
     }
     else if (audioopen === 3) {
@@ -61,6 +60,9 @@ function tasbeh_count() {
         }
         else if (audio2 == 2){
             window.navigator.vibrate([50]);
+        }
+        else if (audio2 == 3){
+            window.navigator.vibrate([0]);
         }
     }
     else if (count < parseInt(count_input_btninnerhtml.innerHTML)) {
