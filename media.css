@@ -1,3 +1,54 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 420px) {
+    .count_input_btn{
+        font-size: 14px;
+        padding: 10px 0px;
+        margin-left: 60px;
+    }
+    .tasbeh_popup_form{
+        width: 70%;
+        height: 200px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .tasbeh_popup_form h2{
+        font-size: 20px;
+        color: #109484;
+        text-align: center;
+    }
+}
 
+
+@media screen and (max-width: 375px) {
+    .count_input_btn{
+        width: 50%;
+        font-size: 14px;
+        padding: 10px 0px;
+        margin-left: 45px;
+        margin-right: 5px;
+    }
+    .tasbeh__navbar_funksiya img{
+        width: 25px;
+    }
+
+    .tasbeh_popup_form{
+        width: 70%;
+        height: 200px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .tasbeh_popup_form h2{
+        font-size: 20px;
+        color: #109484;
+        text-align: center;
+    }
 }
