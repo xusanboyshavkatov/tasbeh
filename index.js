@@ -14,7 +14,6 @@ function musiqa() {
     if (audioopen === 1) {
         musiqaicon.src = "img/icons8-vibration-64.png"
         audio = window.navigator.vibrate([50])
-        audio = ""
         audioopen++
     }
     else if (audioopen === 2) {
