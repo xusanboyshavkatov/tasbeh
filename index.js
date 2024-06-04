@@ -13,7 +13,7 @@ audio = new Audio("audio/click.m4a")
 function musiqa() {
     if (audioopen === 1) {
         musiqaicon.src = "img/icons8-vibration-64.png"
-        window.navigator.vibrate([50])
+        audio = window.navigator.vibrate([50])
         audio = ""
         audioopen++
     }
