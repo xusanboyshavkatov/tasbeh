@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="media.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
     <div class="tasbeh__wrap">
         <div class="tasbeh__navbar">
@@ -30,18 +32,24 @@
             <h1 class="tasbeh_footer_h1">Hammasni ko'rish</h1>
         </div>
 
+        <div class="tasbeh_popup_input display_none">
+            <form class="tasbeh_popup_form">
+                <h2>Kerakli Miqdorni kiriting</h2>
+                <input type="text" placeholder="Kerakli miqdorni kiriting" class="count_input">
+                <div class="tasbeh_popup_btns">
+                    <button class="cancel_btn btn" onclick="cancel_btn()">Bekor qilsh</button>
+                    <button class="save_btn btn" onclick="save_btn()">Saqlash</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="ilova_download">
+            <a href="app/tasbeh.uz.apk" download="app/tasbeh.uz.apk"> <img src="img/icons8-android-50 (1).png">Yuklab olish</a>
+            <img src="img/icons8-close-50.png" class="ilove-not_close" onclick="ilova_not_close()">
+        </div>
     </div>
 
-    <div class="tasbeh_popup_input display_none">
-        <form class="tasbeh_popup_form">
-            <h2>Kerakli Miqdorni kiriting</h2>
-            <input type="text" placeholder="Kerakli miqdorni kiriting" class="count_input">
-            <div class="tasbeh_popup_btns">
-                <button class="cancel_btn btn" onclick="cancel_btn()">Bekor qilsh</button>
-                <button class="save_btn btn" onclick="save_btn()">Saqlash</button>
-            </div>
-        </form>
-    </div>
     <script src="index.js"></script>
 </body>
+
 </html>

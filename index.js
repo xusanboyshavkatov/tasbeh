@@ -3,6 +3,8 @@ let count_input = document.querySelector(".count_input")
 let count_input_btninnerhtml = document.querySelector(".count_input_btn")
 let tasbeh_count_h1 = document.querySelector(".tasbeh_count_h1")
 
+let ilova_download = document.querySelector(".ilova_download")
+
 let musiqaicon = document.querySelector(".musiqaicon")
 
 let count = 0
@@ -42,6 +44,11 @@ function save_btn() {
 function cancel_btn() {
     tasbeh_popup_input.classList.add("display_none")
     event.preventDefault();
+}
+
+
+function ilova_not_close() {
+    ilova_download.classList.add("display_none")
 }
 
 function tasbeh_count() {

@@ -161,7 +161,52 @@
     color: white;
 }
 
+
+/* bildirishnoma */
+
+@keyframes bildirishnoma {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 10px; /* Oxirgi holat */
+    }
+}
+.ilova_download{
+    width: 80%;
+    height: 50px;
+    padding: 15px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(246, 246, 246);
+    border: 4px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    position: absolute;
+    top: -100px; /*Ekrandan tashqarida boshlanadi*/
+    /* top: 0; */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    animation: bildirishnoma 1s ease-out 4s forwards; /*Animatsiya qo'shildi*/
+}
+.ilova_download a{
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #109484;
+}
+
+.ilova_download img{
+    width: 30px;
+}
+
+
 .display_none{
     display: none;
 }
-
