@@ -207,11 +207,6 @@
 }
 
 
-.display_none{
-    display: none;
-}
-
-
 .info{
     width: 150px;
     height: 100px;
@@ -223,7 +218,7 @@
     border-radius: 0px 10px 10px 10px;
     padding: 5px;
     border: 0.5px solid gray;
-    display: none;
+    display: block;
 }
 
 .info a{
@@ -242,4 +237,8 @@
 
 .info_btn:hover ~ .info {
     display: block;
+}
+
+.display_none{
+    display: none;
 }

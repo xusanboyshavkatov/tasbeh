@@ -91,3 +91,18 @@ function res() {
     count_input_btninnerhtml.innerHTML = "Maqsadli miqdor!"
     count_input.value = ""
 }
+
+teng = 1
+function info_btn() {
+    let info = document.querySelector(".info")
+    if (teng == 1) {
+        info.classList.remove("display_none")
+        teng++
+    }
+
+    else if (teng == 2) {
+        info.classList.add("display_none")
+        teng = 1
+    }
+
+}
