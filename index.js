@@ -11,6 +11,8 @@ let count = 0
 let audio2 = 1
 let audioopen = 1
 
+
+
 function musiqa() {
     if (audioopen === 1) {
         musiqaicon.src = "img/icons8-vibration-64.png"
@@ -35,11 +37,30 @@ function count_input_btn() {
 }
 
 function save_btn() {
-    count_input_btninnerhtml.innerHTML = count_input.value
-    count_input_btninnerhtml.style.fontSize = "22px";
-    count_input.value = ""
-    tasbeh_popup_input.classList.add("display_none")
-    event.preventDefault();
+    if (count_input.value === "" ) {
+        tasbeh_popup_input.classList.add("display_none")
+        event.preventDefault();
+        return;
+    }
+    else if (count_input.value >= count) {
+        count 
+        count_input_btninnerhtml.innerHTML = count_input.value
+        count_input_btninnerhtml.style.fontSize = "22px";
+        tasbeh_count_h1.innerHTML = count
+        count_input.value = ""
+        tasbeh_popup_input.classList.add("display_none")
+        event.preventDefault();
+    }
+    else if (count_input.value <= count) {
+        count = 0
+        count_input_btninnerhtml.innerHTML = count_input.value
+        count_input_btninnerhtml.style.fontSize = "22px";
+        tasbeh_count_h1.innerHTML = count
+        count_input.value = ""
+        tasbeh_popup_input.classList.add("display_none")
+        event.preventDefault();
+    }
+    
 }
 function cancel_btn() {
     tasbeh_popup_input.classList.add("display_none")
