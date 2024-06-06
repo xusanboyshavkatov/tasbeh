@@ -210,3 +210,36 @@
 .display_none{
     display: none;
 }
+
+
+.info{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(244, 244, 244);
+    position: absolute;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 110px;
+    border-radius: 0px 10px 10px 10px;
+    padding: 5px;
+    border: 0.5px solid gray;
+    display: none;
+}
+
+.info a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #109484;
+}
+.info p{
+    font-size: 14px;
+    color: black;
+}
+
+.info_btn {
+    cursor: pointer;
+}
+
+.info_btn:hover ~ .info {
+    display: block;
+}
