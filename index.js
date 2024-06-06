@@ -20,7 +20,7 @@ function musiqa() {
     else if (audioopen === 2) {
         musiqaicon.src = "img/icons8-no-audio-50 (2).png"
         audio2++
-        audioopen ++
+        audioopen++
     }
     else if (audioopen === 3) {
         musiqaicon.src = "img/icons8-audio-50 (1).png"
@@ -65,10 +65,10 @@ function tasbeh_count() {
             // Ovozni ijro etish
             audio.play();
         }
-        else if (audio2 == 2){
+        else if (audio2 == 2) {
             window.navigator.vibrate([50]);
         }
-        else if (audio2 == 3){
+        else if (audio2 == 3) {
             window.navigator.vibrate([0]);
         }
     }
